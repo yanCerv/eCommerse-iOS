@@ -11,7 +11,8 @@ import SwiftUI
 struct eCommerse_iOSApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView()
+       MainTabView()
+        .environmentObject(NavigationManager())
     }
   }
 }

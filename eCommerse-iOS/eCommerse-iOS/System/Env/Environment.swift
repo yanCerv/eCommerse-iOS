@@ -45,11 +45,11 @@ final class Environment {
   
   private func getKeyEnv() -> EnvironmentType {
      #if Store
-    return .Store
+    return .store
      #elseif QA
-    return .QA
+    return .qA
      #else
-    return .Stage
+    return .stage
      #endif
   }
   
@@ -58,8 +58,8 @@ final class Environment {
   }
   
   enum EnvironmentType: String {
-    case Store
-    case QA
-    case Stage
+    case store
+    case qa
+    case stage
   }
 }
