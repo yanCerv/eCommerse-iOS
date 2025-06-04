@@ -15,6 +15,7 @@ final class HomeViewModel {
   var isDataLoaded: Bool = false
   var showAlert: Bool = false
   var errorMessage: String = ""
+  var columns: [GridItem] = Array(repeating: .init(.adaptive(minimum: 150, maximum: 170)), count: 2)
   
   var mainCategory: MainCategory = MainCategory(name: "Categories", categoryProducts: [])
   
@@ -43,9 +44,30 @@ final class HomeViewModel {
     
     let categoryNames = Set(products.map { $0.category })
     let categoryProducts = categoryNames.map { categoryName in
-      CategoryProducts(name: categoryName, products: products.filter { $0.category == categoryName })
+      let imageCategory = setImageCategory(categoryName)
+      return CategoryProducts(name: categoryName, image: imageCategory, products: products.filter { $0.category == categoryName })
     }
+    
     mainCategory.categoryProducts = categoryProducts
     self.mainCategory = mainCategory
+  }
+  
+  private func setImageCategory(_ categoryName: String) -> String {
+    let lower = categoryName.lowercased()
+    let mapping = mappedCategories()
+    
+    for (keyword, imageName) in mapping {
+      if lower.contains(keyword) {
+        return imageName
+      }
+    }
+    return "default-category"
+  }
+  
+  private func mappedCategories() -> [(keyword: String, imageName: String)] {
+    return [("women", "w-blouse"),
+            ("men", "m-shirt"),
+            ("electronics", "electronics"),
+            ("jewelery", "jewelery")]
   }
 }

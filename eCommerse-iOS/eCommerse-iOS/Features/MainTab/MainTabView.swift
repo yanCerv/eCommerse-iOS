@@ -14,7 +14,7 @@ struct MainTabView: View {
   var body: some View {
     NavigationStack(path: $navigation.paths) {
       TabView {
-        Tab("Categories", systemImage: "house.fill") {
+        Tab("", systemImage: "house.fill") {
           HomeView()
         }
       }
