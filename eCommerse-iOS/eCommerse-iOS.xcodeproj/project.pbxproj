@@ -92,6 +92,8 @@
 		7CFA435A2DEFDA91004681C8 /* eCommerse-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7CFA43682DEFDD56004681C8 /* NetworkLayer */,
+				7CFA43692DEFDD56004681C8 /* Features */,
 				7CFA43572DEFDA91004681C8 /* Assets.xcassets */,
 				7CFA43582DEFDA91004681C8 /* ContentView.swift */,
 				7CFA43592DEFDA91004681C8 /* eCommerse_iOSApp.swift */,
@@ -114,6 +116,20 @@
 				7CFA43622DEFDA91004681C8 /* eCommerse_iOSUITestsLaunchTests.swift */,
 			);
 			path = "eCommerse-iOSUITests";
+			sourceTree = "<group>";
+		};
+		7CFA43682DEFDD56004681C8 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		7CFA43692DEFDD56004681C8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
