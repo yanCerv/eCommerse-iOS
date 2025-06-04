@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C632F752DF0623F0062720B /* eCommerse_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C632F732DF0623F0062720B /* eCommerse_iOSApp.swift */; };
+		7C632F7E2DF062DF0062720B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C632F7C2DF062DF0062720B /* Environment.swift */; };
+		7C632F7F2DF062DF0062720B /* Env.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C632F7B2DF062DF0062720B /* Env.plist */; };
 		7CFA435B2DEFDA91004681C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFA43582DEFDA91004681C8 /* ContentView.swift */; };
-		7CFA435C2DEFDA91004681C8 /* eCommerse_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFA43592DEFDA91004681C8 /* eCommerse_iOSApp.swift */; };
 		7CFA435D2DEFDA91004681C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CFA43572DEFDA91004681C8 /* Assets.xcassets */; };
 		7CFA43602DEFDA91004681C8 /* eCommerse_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFA435E2DEFDA91004681C8 /* eCommerse_iOSTests.swift */; };
 		7CFA43642DEFDA91004681C8 /* eCommerse_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFA43612DEFDA91004681C8 /* eCommerse_iOSUITests.swift */; };
@@ -33,12 +35,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C632F732DF0623F0062720B /* eCommerse_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eCommerse_iOSApp.swift; sourceTree = "<group>"; };
+		7C632F7B2DF062DF0062720B /* Env.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Env.plist; sourceTree = "<group>"; };
+		7C632F7C2DF062DF0062720B /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		7C632F802DF063780062720B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CFA432D2DEFDA47004681C8 /* eCommerse-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eCommerse-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFA433A2DEFDA49004681C8 /* eCommerse-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eCommerse-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFA43442DEFDA49004681C8 /* eCommerse-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eCommerse-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFA43572DEFDA91004681C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CFA43582DEFDA91004681C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7CFA43592DEFDA91004681C8 /* eCommerse_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eCommerse_iOSApp.swift; sourceTree = "<group>"; };
 		7CFA435E2DEFDA91004681C8 /* eCommerse_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eCommerse_iOSTests.swift; sourceTree = "<group>"; };
 		7CFA43612DEFDA91004681C8 /* eCommerse_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eCommerse_iOSUITests.swift; sourceTree = "<group>"; };
 		7CFA43622DEFDA91004681C8 /* eCommerse_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eCommerse_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -69,6 +74,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C632F6D2DF0620D0062720B /* System */ = {
+			isa = PBXGroup;
+			children = (
+				7C632F7D2DF062DF0062720B /* Env */,
+				7C632F802DF063780062720B /* Info.plist */,
+				7CFA43572DEFDA91004681C8 /* Assets.xcassets */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		7C632F712DF0623F0062720B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7CFA43582DEFDA91004681C8 /* ContentView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7C632F722DF0623F0062720B /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		7C632F742DF0623F0062720B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7C632F732DF0623F0062720B /* eCommerse_iOSApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7C632F7D2DF062DF0062720B /* Env */ = {
+			isa = PBXGroup;
+			children = (
+				7C632F7B2DF062DF0062720B /* Env.plist */,
+				7C632F7C2DF062DF0062720B /* Environment.swift */,
+			);
+			path = Env;
+			sourceTree = "<group>";
+		};
+		7C632F822DF064C20062720B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		7CFA43242DEFDA47004681C8 = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +148,7 @@
 			children = (
 				7CFA43682DEFDD56004681C8 /* NetworkLayer */,
 				7CFA43692DEFDD56004681C8 /* Features */,
-				7CFA43572DEFDA91004681C8 /* Assets.xcassets */,
-				7CFA43582DEFDA91004681C8 /* ContentView.swift */,
-				7CFA43592DEFDA91004681C8 /* eCommerse_iOSApp.swift */,
+				7C632F6D2DF0620D0062720B /* System */,
 			);
 			path = "eCommerse-iOS";
 			sourceTree = "<group>";
@@ -121,6 +173,7 @@
 		7CFA43682DEFDD56004681C8 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				7C632F822DF064C20062720B /* Request */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -128,6 +181,9 @@
 		7CFA43692DEFDD56004681C8 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				7C632F742DF0623F0062720B /* App */,
+				7C632F722DF0623F0062720B /* MainTab */,
+				7C632F712DF0623F0062720B /* Home */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -243,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C632F7F2DF062DF0062720B /* Env.plist in Resources */,
 				7CFA435D2DEFDA91004681C8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,8 +325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C632F752DF0623F0062720B /* eCommerse_iOSApp.swift in Sources */,
+				7C632F7E2DF062DF0062720B /* Environment.swift in Sources */,
 				7CFA435B2DEFDA91004681C8 /* ContentView.swift in Sources */,
-				7CFA435C2DEFDA91004681C8 /* eCommerse_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,11 +495,12 @@
 				DEVELOPMENT_TEAM = AAP9K94BH2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "eCommerse-iOS/System/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,9 +508,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.legionofhorses.mx.eCommerse-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,11 +527,12 @@
 				DEVELOPMENT_TEAM = AAP9K94BH2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "eCommerse-iOS/System/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,9 +540,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.legionofhorses.mx.eCommerse-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
